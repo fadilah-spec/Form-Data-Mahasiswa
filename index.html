@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Data Mahasiswa</title>
+  </head>
+  <body>
+    <h2 align="center">Form Data Mahasiswa</h2>
+    <hr width="100%" />
+
+    <form action="#" method="POST">
+      <table border="0" cellpadding="5" cellspacing="0" align="center">
+        <tr>
+          <td>Nama anda</td>
+          <td>:</td>
+          <td><input type="text" name="nama" size="30" /></td>
+        </tr>
+        <tr>
+          <td>Jenis kelamin</td>
+          <td>:</td>
+          <td>
+            <input type="radio" name="jk" value="pria" /> pria
+            <input type="radio" name="jk" value="wanita" /> wanita
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">Hoby</td>
+          <td valign="top">:</td>
+          <td>
+            <input type="checkbox" name="hobi[]" value="musik" /> musik <br />
+            <input type="checkbox" name="hobi[]" value="jalan" /> jalan <br />
+            <input type="checkbox" name="hobi[]" value="baca" /> baca
+          </td>
+        </tr>
+        <tr>
+          <td>Agama</td>
+          <td>:</td>
+          <td>
+            <select name="agama">
+              <option value="Islam">Islam</option>
+              <option value="Kristen">Kristen</option>
+              <option value="Katolik">Katolik</option>
+              <option value="Hindu">Hindu</option>
+              <option value="Buddha">Buddha</option>
+              <option value="Khonghucu">Khonghucu</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Asal sekolah</td>
+          <td>:</td>
+          <td><input type="text" name="asal_sekolah" size="50" /></td>
+        </tr>
+        <tr>
+          <td valign="top">Keterangan</td>
+          <td valign="top">:</td>
+          <td>
+            <textarea name="keterangan" rows="5" cols="40"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3"><hr width="100%" /></td>
+        </tr>
+        <tr>
+          <td colspan="3" align="center">
+            <input type="submit" value="Kirim" />
+            <input type="reset" value="Reset" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
